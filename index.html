@@ -4,21 +4,26 @@
         <title>
             Play the Music!
         </title>
-        <script src="static/scripts/js/music.js"></script>
+        <!-- Imports -->
+        <script type="text/javascript" src="static/fontawesome/js/all.min.js"></script>
         <script type="text/javascript" src="static/bootstrap-4.4.1/jquery.min.js"></script>
         <script type="text/javascript" src="static/bootstrap-4.4.1/js/bootstrap.bundle.min.js"></script>
         <script type="text/javascript" src="static/bootstrap-4.4.1/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="static/css/controls.css">
-        <link rel="stylesheet" href="static/css/player.css">
-        <link rel="stylesheet" href="static/css/topbar.css">
-        <link rel="stylesheet" href="static/css/custom.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- Custom -->
+        <script src="static/scripts/js/music.js"></script>
+
+        <!-- Imports -->
+        <link rel="stylesheet" href="static/fontawesome/css/all.min.css" />
         <link rel="stylesheet" href="static/bootstrap-4.4.1/css/bootstrap-grid.min.css" />
         <link rel="stylesheet" href="static/bootstrap-4.4.1/css/bootstrap-reboot.css" />
         <link rel="stylesheet" href="static/bootstrap-4.4.1/css/bootstrap.min.css" />
+        <!-- Custom -->
+        <link rel="stylesheet" href="static/css/topbar.css" />
+        <link rel="stylesheet" href="static/css/custom.css" />
     </head>
     <body>
-        <div class="conatiner">
+        <div class="conatiner d-flex flex-column h-100">
             <div class="row">
                 <!-- for showing the music graph -->
                 <div id="topbar" class="col-md-12 sticky-top topbar">
@@ -26,87 +31,164 @@
                         <!-- player animation goes here -->
                     </canvas>
                 </div>
-                <div class="col-md-8">
-                    <div class="row">
-                        <div class="col-md-12 height-300px">Pressed Button</div>
-                        <div class="col-md-12 chord-button">
+            </div>
+            <div class="row flex-grow-1">
+                <div class="col-md-8 h-100">
+                    <div class="row row-fluid">
+                        <div class="col-md-12">Pressed Button</div>
+                    </div>
+                    <div class="row row-fluid">
+                        <div class="chord-button col-md-12 overflow-auto bg-secondary">
                             <div class="row">
                                 <div class="col-md-1 padding-top-5per">
-                                    <button type="button" class="btn btn-warning"><b>C4</b></button>
+                                    <button type="button" class="shadow rounded btn btn-warning"><b>C3</b></button>
                                 </div>
                                 <div class="col-md-1 padding-top-5per">
-                                    <button type="button" class="btn btn-warning"><b>D4</b></button>
+                                    <button type="button" class="shadow rounded btn btn-warning"><b>C#3</b></button>
                                 </div>
                                 <div class="col-md-1 padding-top-5per">
-                                    <button type="button" class="btn btn-warning"><b>G4</b></button>
+                                    <button type="button" class="shadow rounded btn btn-warning"><b>D3</b></button>
                                 </div>
                                 <div class="col-md-1 padding-top-5per">
-                                    <button type="button" class="btn btn-warning"><b>F4</b></button>
+                                    <button type="button" class="shadow rounded btn btn-warning"><b>D#3</b></button>
                                 </div>
                                 <div class="col-md-1 padding-top-5per">
-                                    <button type="button" class="btn btn-warning"><b>C3</b></button>
+                                    <button type="button" class="shadow rounded btn btn-warning"><b>E3</b></button>
                                 </div>
                                 <div class="col-md-1 padding-top-5per">
-                                    <button type="button" class="btn btn-warning"><b>D3</b></button>
+                                    <button type="button" class="shadow rounded btn btn-warning"><b>F3</b></button>
                                 </div>
                                 <div class="col-md-1 padding-top-5per">
-                                    <button type="button" class="btn btn-warning"><b>E3</b></button>
+                                    <button type="button" class="shadow rounded btn btn-warning"><b>F#3</b></button>
                                 </div>
                                 <div class="col-md-1 padding-top-5per">
-                                    <button type="button" class="btn btn-warning"><b>F3</b></button>
+                                    <button type="button" class="shadow rounded btn btn-warning"><b>G3</b></button>
                                 </div>
                                 <div class="col-md-1 padding-top-5per">
-                                    <button type="button" class="btn btn-warning"><b>G3</b></button>
+                                    <button type="button" class="shadow rounded btn btn-warning"><b>G#3</b></button>
                                 </div>
                                 <div class="col-md-1 padding-top-5per">
-                                    <button type="button" class="btn btn-warning"><b>A3</b></button>
+                                    <button type="button" class="shadow rounded btn btn-warning"><b>A3</b></button>
                                 </div>
                                 <div class="col-md-1 padding-top-5per">
-                                    <button type="button" class="btn btn-warning"><b>B3</b></button>
+                                    <button type="button" class="shadow rounded btn btn-warning"><b>A#3</b></button>
                                 </div>
                                 <div class="col-md-1 padding-top-5per">
-                                    <button type="button" class="btn btn-warning"><b>B2</b></button>
+                                    <button type="button" class="shadow rounded btn btn-warning"><b>B3</b></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-1 padding-top-5per">
+                                    <button type="button" class="shadow rounded btn btn-warning"><b>C4</b></button>
                                 </div>
                                 <div class="col-md-1 padding-top-5per">
-                                    <button type="button" class="btn btn-warning"><b>G2</b></button>
+                                    <button type="button" class="shadow rounded btn btn-warning"><b>C#4</b></button>
+                                </div>
+                                <div class="col-md-1 padding-top-5per">
+                                    <button type="button" class="shadow rounded btn btn-warning"><b>D4</b></button>
+                                </div>
+                                <div class="col-md-1 padding-top-5per">
+                                    <button type="button" class="shadow rounded btn btn-warning"><b>D#4</b></button>
+                                </div>
+                                <div class="col-md-1 padding-top-5per">
+                                    <button type="button" class="shadow rounded btn btn-warning"><b>E4</b></button>
+                                </div>
+                                <div class="col-md-1 padding-top-5per">
+                                    <button type="button" class="shadow rounded btn btn-warning"><b>F4</b></button>
+                                </div>
+                                <div class="col-md-1 padding-top-5per">
+                                    <button type="button" class="shadow rounded btn btn-warning"><b>F#4</b></button>
+                                </div>
+                                <div class="col-md-1 padding-top-5per">
+                                    <button type="button" class="shadow rounded btn btn-warning"><b>G4</b></button>
+                                </div>
+                                <div class="col-md-1 padding-top-5per">
+                                    <button type="button" class="shadow rounded btn btn-warning"><b>G#4</b></button>
+                                </div>
+                                <div class="col-md-1 padding-top-5per">
+                                    <button type="button" class="shadow rounded btn btn-warning"><b>A4</b></button>
+                                </div>
+                                <div class="col-md-1 padding-top-5per">
+                                    <button type="button" class="shadow rounded btn btn-warning"><b>A#4</b></button>
+                                </div>
+                                <div class="col-md-1 padding-top-5per">
+                                    <button type="button" class="shadow rounded btn btn-warning"><b>B4</b></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-1 padding-top-5per">
+                                    <button type="button" class="shadow rounded btn btn-warning"><b>C5</b></button>
+                                </div>
+                                <div class="col-md-1 padding-top-5per">
+                                    <button type="button" class="shadow rounded btn btn-warning"><b>C#5</b></button>
+                                </div>
+                                <div class="col-md-1 padding-top-5per">
+                                    <button type="button" class="shadow rounded btn btn-warning"><b>D5</b></button>
+                                </div>
+                                <div class="col-md-1 padding-top-5per">
+                                    <button type="button" class="shadow rounded btn btn-warning"><b>D#5</b></button>
+                                </div>
+                                <div class="col-md-1 padding-top-5per">
+                                    <button type="button" class="shadow rounded btn btn-warning"><b>E5</b></button>
+                                </div>
+                                <div class="col-md-1 padding-top-5per">
+                                    <button type="button" class="shadow rounded btn btn-warning"><b>F5</b></button>
+                                </div>
+                                <div class="col-md-1 padding-top-5per">
+                                    <button type="button" class="shadow rounded btn btn-warning"><b>F#5</b></button>
+                                </div>
+                                <div class="col-md-1 padding-top-5per">
+                                    <button type="button" class="shadow rounded btn btn-warning"><b>G5</b></button>
+                                </div>
+                                <div class="col-md-1 padding-top-5per">
+                                    <button type="button" class="shadow rounded btn btn-warning"><b>G#5</b></button>
+                                </div>
+                                <div class="col-md-1 padding-top-5per">
+                                    <button type="button" class="shadow rounded btn btn-warning"><b>A5</b></button>
+                                </div>
+                                <div class="col-md-1 padding-top-5per">
+                                    <button type="button" class="shadow rounded btn btn-warning"><b>A#5</b></button>
+                                </div>
+                                <div class="col-md-1 padding-top-5per">
+                                    <button type="button" class="shadow rounded btn btn-warning"><b>B5</b></button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="row">
+                <div class="col-md-4 bg-dark">
+                    <div class="row row-fluid flex-grow h-100">
                         <div class="col-md-12 padding-5per">
-                            <h4>Music Player</h4>
+                            <h4 class="text-center text-light">Music Player</h4>
                             <hr />
                         </div>
                         <div class="col-md-12 text-center">
                             <div class="btn-group active" role="group">
-                                <button type="button" class="btn btn-warning"><i class="fa fa-play"></i></button>
-                                <button type="button" class="btn btn-warning"><i class="fa fa-pause" aria-hidden="true"></i></button>
-                                <button type="button" class="btn btn-warning"><i class="fa fa-stop" aria-hidden="true"></i></button>
-                                <button type="button" class="btn btn-warning"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                                <button type="button" class="btn btn-light"><i class="fa fa-play"></i></button>
+                                <button type="button" class="btn btn-light"><i class="fa fa-pause" aria-hidden="true"></i></button>
+                                <button type="button" class="btn btn-light"><i class="fa fa-stop" aria-hidden="true"></i></button>
+                                <button type="button" class="btn btn-light"><i class="fa fa-trash" aria-hidden="true"></i></button>
                             </div>
                         </div>
                         <div class="col-md-12 text-center">
                             <div class="row">
                                 <div class="col-md-3 padding-top-5per">
-                                    <button class="btn btn-warning fa fa-play" onclick="play(twinkle, 90)">Twinkle</button>
+                                    <button class="btn btn-light" onclick="play(twinkle, 90)">Twinkle</button>
                                 </div>
                                 <div class="col-md-3 padding-top-5per">
-                                    <button class="btn btn-warning fa fa-play" onclick="play(london, 90)">London</button>
+                                    <button class="btn btn-light" onclick="play(london, 90)">London</button>
                                 </div>
                                 <div class="col-md-3 padding-top-5per">
-                                    <button class="btn btn-warning fa fa-play" onclick="play(theme, 90)">Theme</button>
+                                    <button class="btn btn-light" onclick="play(theme, 90)">Theme</button>
                                 </div>
                                 <div class="col-md-3 padding-top-5per">
-                                    <button class="btn btn-warning fa fa-play" onclick="play(titan, 120)">Titan</button>
+                                    <button class="btn btn-light" onclick="play(titan, 120)">Titan</button>
                                 </div>
                                 <div class="col-md-3 padding-top-5per">
-                                    <button class="btn btn-warning fa fa-play" onclick="play(airtel, 160)">Airtel</button>
+                                    <button class="btn btn-light" onclick="play(airtel, 160)">Airtel</button>
                                 </div>
                                 <div class="col-md-3 padding-top-5per">
-                                    <button class="btn btn-warning fa fa-play" onclick="play(anisutide, 120)">Anisutide</button>
+                                    <button class="btn btn-light" onclick="play(anisutide, 120)">Anisutide</button>
                                 </div>
                             </div>
                         </div>
@@ -114,13 +196,5 @@
                 </div>
             </div>
         </div>
-        <!-- left panel has composed notes and the keys -->
-        <div id="player" class="player">
-            <div id="notes"></div>
-            <div id="keys"></div>
-        </div>
-        <!-- right panel has buttons to play, pause, stop the music
-        and also has buttons to remove an entry from composed notes -->
-        
     </body>
 </html>
