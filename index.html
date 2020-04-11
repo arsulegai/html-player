@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Play the Music!
+        </title>
+        <script src="static/scripts/js/music.js"></script>
+        <link rel="stylesheet" href="static/css/controls.css">
+        <link rel="stylesheet" href="static/css/player.css">
+        <link rel="stylesheet" href="static/css/topbar.css">
+    </head>
+    <body>
+        <!-- for showing the music graph -->
+        <div id="topbar" class="topbar">
+            <canvas id="sound_track">
+                <!-- player animation goes here -->
+            </canvas>
+        </div>
+        <!-- left panel has composed notes and the keys -->
+        <div id="player" class="player">
+            <div id="notes"></div>
+            <div id="keys"></div>
+        </div>
+        <!-- right panel has buttons to play, pause, stop the music
+        and also has buttons to remove an entry from composed notes -->
+        <div id="controls" class="controls">
+            <button class="fa fa-play" onclick="play(twinkle, 90)">Twinkle</button>
+            <button class="fa fa-play" onclick="play(london, 90)">London</button>
+            <button class="fa fa-play" onclick="play(theme, 90)">Theme</button>
+            <button class="fa fa-play" onclick="play(titan, 120)">Titan</button>
+            <button class="fa fa-play" onclick="play(airtel, 160)">Airtel</button>
+            <button class="fa fa-play" onclick="play(anisutide, 120)">Anisutide</button>
+        </div>
+    </body>
+</html>
