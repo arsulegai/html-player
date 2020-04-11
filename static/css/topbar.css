@@ -1,11 +1,5 @@
 .topbar {
-    overflow: hidden;
     background-color: #333;
-    position: fixed;
-    top: 0;
-    float: left;
-    width: 100%;
-    left: 0;
 }
 
 /* Change background on mouse-over */
