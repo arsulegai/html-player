@@ -9,6 +9,7 @@ body {
 
 .padding-top-5per {
     padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .chord-button {
@@ -26,4 +27,8 @@ body {
 
 .absolute-bottom {
     bottom: 0;
+}
+
+#notes {
+    padding: 5%;
 }
